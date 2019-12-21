@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tdd-googletest.dir/src/main.cpp.o"
+  "CMakeFiles/tdd-googletest.dir/src/romanNumeralConverter.cpp.o"
   "tdd-googletest.pdb"
   "tdd-googletest"
 )

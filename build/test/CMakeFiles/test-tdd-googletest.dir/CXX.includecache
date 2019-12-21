@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../include/RetweetCollection.h
+../include/romanNumeralConverter.h
+string
+-
 
 ../test/googletest/googlemock/include/gmock/gmock-actions.h
 errno.h
@@ -532,15 +534,23 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp
-RetweetCollection.h
-/home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.h
-
-/home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp
+../test/include/romanNumeralConverterTest.h
 gmock/gmock.h
-/home/do/Codes/Gits/TDD-GoogleTest/test/src/gmock/gmock.h
-RetweetCollection.h
-/home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollection.h
+-
+romanNumeralConverter.h
+-
+
+/home/do/Codes/Gits/TDD-GoogleTest/src/romanNumeralConverter.cpp
+romanNumeralConverter.h
+-
+string
+-
+
+/home/do/Codes/Gits/TDD-GoogleTest/test/src/romanNumeralConverterTest.cpp
+gmock/gmock.h
+-
+romanNumeralConverterTest.h
+-
 
 /home/do/Codes/Gits/TDD-GoogleTest/test/src/test.cpp
 iostream

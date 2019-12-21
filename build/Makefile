@@ -272,6 +272,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/tdd-googletest.dir/build.make CMakeFiles/tdd-googletest.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/romanNumeralConverter.o: src/romanNumeralConverter.cpp.o
+
+.PHONY : src/romanNumeralConverter.o
+
+# target to build an object file
+src/romanNumeralConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/tdd-googletest.dir/build.make CMakeFiles/tdd-googletest.dir/src/romanNumeralConverter.cpp.o
+.PHONY : src/romanNumeralConverter.cpp.o
+
+src/romanNumeralConverter.i: src/romanNumeralConverter.cpp.i
+
+.PHONY : src/romanNumeralConverter.i
+
+# target to preprocess a source file
+src/romanNumeralConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/tdd-googletest.dir/build.make CMakeFiles/tdd-googletest.dir/src/romanNumeralConverter.cpp.i
+.PHONY : src/romanNumeralConverter.cpp.i
+
+src/romanNumeralConverter.s: src/romanNumeralConverter.cpp.s
+
+.PHONY : src/romanNumeralConverter.s
+
+# target to generate assembly for a file
+src/romanNumeralConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/tdd-googletest.dir/build.make CMakeFiles/tdd-googletest.dir/src/romanNumeralConverter.cpp.s
+.PHONY : src/romanNumeralConverter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,6 +321,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/romanNumeralConverter.o"
+	@echo "... src/romanNumeralConverter.i"
+	@echo "... src/romanNumeralConverter.s"
 .PHONY : help
 
 

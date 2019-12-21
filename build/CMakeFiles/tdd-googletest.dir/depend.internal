@@ -4,3 +4,6 @@
 CMakeFiles/tdd-googletest.dir/src/main.cpp.o
  ../include/main.hpp
  /home/do/Codes/Gits/TDD-GoogleTest/src/main.cpp
+CMakeFiles/tdd-googletest.dir/src/romanNumeralConverter.cpp.o
+ ../include/romanNumeralConverter.h
+ /home/do/Codes/Gits/TDD-GoogleTest/src/romanNumeralConverter.cpp

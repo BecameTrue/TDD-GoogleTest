@@ -203,3 +203,94 @@ There are two ways to create a test double implementation.
 
 ## Practice
 
+### What to build?
+
+**Roman Numeral Converter**
+
+Takes an arabic number and returns its Roman numeral equivalent as a string.
+
+### Remind of the cycle
+
+1. Write a small test. 
+2. Ensure it fails. 
+3. Get it to pass. 
+4. Review and clean up the design including that of the tests.
+5. Ensure the tests all still pass.
+
+### Roman Numerals
+
+[From Wiki](https://en.wikipedia.org/wiki/Roman_numerals)
+
+|Symbol| I | V | X | L | C | D |  M  |
+|------|---|---|---|---|---|---|-----|
+|Value | 1 | 5 |10 |50 |100|500|1,000|
+
+There is not, and never has been, an "official", "binding", or universally accepted standard for Roman numerals. Usage in ancient Rome varied greatly and remained somewhat inconsistent in medieval times and later. The "rules" of the system as it is now applied have been established only by general usage over the centuries.
+
+#### "Standard" forms
+
+Roman numerals are essentially a decimal or "base 10" number system, in that the powers of ten – thousands, hundreds, tens and units – are written separately, from left to right, in that order. In the absence of "place keeping" zeros, different symbols are used for each power of ten, but a common pattern is used for each of them.
+
+The underlying form of this pattern employs the symbols I and V (representing 1 and 5) as simple tally marks, to build the numbers from 1 to 9. Each marker for 1 (I) adds a unit value up to 5 (V), and is then added to (V) to make the numbers from 6 to 9. Finally the unit symbol for the next power completes a "finger count" sequence:
+
+**I, II, III, IIII, V, VI, VII, VIII, VIIII, X.**
+
+At some early time the Romans started to use the shorter forms IV ("one less than 5") for IIII, and IX ("one less than 10") for VIIII – a convention that has been widely, although not universally, used ever since. This convention is called "subtractive" notation, as opposed to the "additive" notation of IIII and VIIII. Thus the numbers from 1 to 10 are generally written as:
+
+**I, II, III, IV, V, VI, VII, VIII, IX, X.**
+
+The multiples of 10, from 10 to 100, are written according to the same pattern, with X, L, and C taking the place of I, V, and X
+
+**X, XX, XXX, XL, L, LX, LXX, LXXX, XC, C.**
+
+Note that 40 is usually written XL ("10 less than 50") rather than XXXX, and 90 as XC ("10 less than 100") rather than LXXXX: following the same "subtractive" pattern as IV and IX.
+
+### Things to test
+
+- [x] Can handle invalid input? (less than zero, zero, real number, alphabet, ...)
+- [ ] Can convert valid input?
+
+### Testing History
+
+#### Can handle invalid input?
+
+Code:
+
+```cpp
+#include <romanNumeralConverter.h>
+#include <string>
+
+using namespace std;
+
+string RomanNumeralConverter::get(int input) {
+    if(input <= 0) return "INVALID";
+}
+```
+
+```cpp
+#include <gmock/gmock.h>
+#include <romanNumeralConverterTest.h>
+
+using namespace testing;
+
+TEST_F(RomanNumeralConverterFixture, CanHandleInvalidInput) {
+    ASSERT_EQ(converter.get(-123), "INVALID");
+    ASSERT_EQ(converter.get(0), "INVALID");
+}
+```
+
+Result:
+
+```bash
+~$ ./test/test-tdd-googletest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RomanNumeralConverterFixture
+[ RUN      ] RomanNumeralConverterFixture.CanHandleInvalidInput
+[       OK ] RomanNumeralConverterFixture.CanHandleInvalidInput (0 ms)
+[----------] 1 test from RomanNumeralConverterFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+```
