@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/RetweetCollection.h
+
 ../test/googletest/googlemock/include/gmock/gmock-actions.h
 errno.h
 -
@@ -530,11 +532,19 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../test/include/test.hpp
+/home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp
+RetweetCollection.h
+/home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.h
+
+/home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp
+gmock/gmock.h
+/home/do/Codes/Gits/TDD-GoogleTest/test/src/gmock/gmock.h
+RetweetCollection.h
+/home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollection.h
 
 /home/do/Codes/Gits/TDD-GoogleTest/test/src/test.cpp
-gmock/gmock.h
+iostream
 -
-test.hpp
+gmock/gmock.h
 -
 

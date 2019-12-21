@@ -100,3 +100,77 @@ Code that is readable, code that doesn’t exhibit duplication, and code that es
 
 ---
 
+### Testing
+
+#### Fixture
+
+Related tests need to run in the same environment. You’ll have many tests that require **common** initialization or helper functions. Many test tools let you define a **fixture**—a class that provides support for cross-test reuse.
+
+Following code shows defining a fixture class.
+
+```cpp
+using namespace ::testing;
+
+class ARetweetCollection: public Test {
+public:
+    RetweetCollection collection;
+};
+```
+
+To give a test **access to members** defined in the **fixture** class, you must change the TEST macro definition to **TEST_F** (the trailing F stands for fixture).
+
+Like this :
+
+```cpp
+TEST_F(ARetweetCollection, IsEmptyWhenCreated) {
+    ASSERT_THAT(collection.isEmpty(), Eq(true));
+}
+```
+
+#### SetUp & TearDown function
+
+If all of the tests in a test case require one or more statements of **common initialization**, you can move that code into a **setup function** that you define in the fixture. In _Google Mock_, you must name this member function **SetUp** (it overrides a virtual function in the base class ::testing::Test).
+
+After creating the fixture instance, Google Mock executes the code in SetUp() and then executes the test itself.
+
+The **teardown function** is essentially the **opposite** of the setup function. It executes after each test, even if the test threw an exception. You use the teardown function for **cleanup purposes**—to release memory (as in this example), to relinquish expensive resources (for example, database connections), or to clean up other bits of state, such as data stored in static variables.
+
+#### Run a subset of tests
+
+Google Mock makes it easy to run a subset of the tests by specifying what is known as a **test filter**. You specify a test filter as a **command-line argument** to your test executable. The filter allows you to specify tests to execute in the form `test_case_name.test_name`
+
+For example :
+
+```bash
+~$ ./test --gtest_filter=ATweet.* # slightly less weak
+```
+
+#### Becareful on comparing floats
+
+Floating-point numbers are **imprecise binary representations** of real numbers. As such, the result of a float-based calculation **might not exactly match** another float value, even though it appears as if they should. 
+
+Here’s an example: 
+
+```cpp
+double x{4.0};
+double y{0.56};
+ASSERT_THAT(x + y, Eq(4.56));
+```
+
+On book, received the following failure when writer executed the previous assertion:
+
+```bash
+Value of: x + y
+Expected: is equal to 4.56
+Actual: 4.56 (of type double)
+```
+
+#### Check for..
+
+With a testing mentality, you seek to create tests that cover a breadth of concerns. You create tests for five types of cases: **zero, one, many, boundary, and exceptional cases.**
+
+---
+
+5 챕터 부터 각 챕터 별 중요 이론 뽑아내기
+
+부록의 Roman Numeral Converter 만들고 과정 기록하기

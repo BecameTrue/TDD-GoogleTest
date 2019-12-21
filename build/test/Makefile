@@ -182,6 +182,60 @@ test-tdd-googletest/fast:
 	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/build
 .PHONY : test-tdd-googletest/fast
 
+__/src/RetweetCollection.o: __/src/RetweetCollection.cpp.o
+
+.PHONY : __/src/RetweetCollection.o
+
+# target to build an object file
+__/src/RetweetCollection.cpp.o:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o
+.PHONY : __/src/RetweetCollection.cpp.o
+
+__/src/RetweetCollection.i: __/src/RetweetCollection.cpp.i
+
+.PHONY : __/src/RetweetCollection.i
+
+# target to preprocess a source file
+__/src/RetweetCollection.cpp.i:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.i
+.PHONY : __/src/RetweetCollection.cpp.i
+
+__/src/RetweetCollection.s: __/src/RetweetCollection.cpp.s
+
+.PHONY : __/src/RetweetCollection.s
+
+# target to generate assembly for a file
+__/src/RetweetCollection.cpp.s:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.s
+.PHONY : __/src/RetweetCollection.cpp.s
+
+src/RetweetCollectionTest.o: src/RetweetCollectionTest.cpp.o
+
+.PHONY : src/RetweetCollectionTest.o
+
+# target to build an object file
+src/RetweetCollectionTest.cpp.o:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o
+.PHONY : src/RetweetCollectionTest.cpp.o
+
+src/RetweetCollectionTest.i: src/RetweetCollectionTest.cpp.i
+
+.PHONY : src/RetweetCollectionTest.i
+
+# target to preprocess a source file
+src/RetweetCollectionTest.cpp.i:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.i
+.PHONY : src/RetweetCollectionTest.cpp.i
+
+src/RetweetCollectionTest.s: src/RetweetCollectionTest.cpp.s
+
+.PHONY : src/RetweetCollectionTest.s
+
+# target to generate assembly for a file
+src/RetweetCollectionTest.cpp.s:
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build && $(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.s
+.PHONY : src/RetweetCollectionTest.cpp.s
+
 src/test.o: src/test.cpp.o
 
 .PHONY : src/test.o
@@ -223,6 +277,12 @@ help:
 	@echo "... test-tdd-googletest"
 	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... __/src/RetweetCollection.o"
+	@echo "... __/src/RetweetCollection.i"
+	@echo "... __/src/RetweetCollection.s"
+	@echo "... src/RetweetCollectionTest.o"
+	@echo "... src/RetweetCollectionTest.i"
+	@echo "... src/RetweetCollectionTest.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"

@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp" "/home/do/Codes/Gits/TDD-GoogleTest/build/test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o"
+  "/home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp" "/home/do/Codes/Gits/TDD-GoogleTest/build/test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o"
   "/home/do/Codes/Gits/TDD-GoogleTest/test/src/test.cpp" "/home/do/Codes/Gits/TDD-GoogleTest/build/test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -81,21 +81,73 @@ test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o.provides: test/CMakeFiles
 test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o.provides.build: test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o
 
 
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o: test/CMakeFiles/test-tdd-googletest.dir/flags.make
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o: ../test/src/RetweetCollectionTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/do/Codes/Gits/TDD-GoogleTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o -c /home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp
+
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.i"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp > CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.i
+
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.s"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/do/Codes/Gits/TDD-GoogleTest/test/src/RetweetCollectionTest.cpp -o CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.s
+
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.requires:
+
+.PHONY : test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.requires
+
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.provides: test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.provides.build
+.PHONY : test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.provides
+
+test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.provides.build: test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o
+
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o: test/CMakeFiles/test-tdd-googletest.dir/flags.make
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o: ../src/RetweetCollection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/do/Codes/Gits/TDD-GoogleTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o -c /home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.i"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp > CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.i
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.s"
+	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/do/Codes/Gits/TDD-GoogleTest/src/RetweetCollection.cpp -o CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.s
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.requires:
+
+.PHONY : test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.requires
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.provides: test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/test-tdd-googletest.dir/build.make test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.provides.build
+.PHONY : test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.provides
+
+test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.provides.build: test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o
+
+
 # Object files for target test-tdd-googletest
 test__tdd__googletest_OBJECTS = \
-"CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o"
+"CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o" \
+"CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o" \
+"CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o"
 
 # External object files for target test-tdd-googletest
 test__tdd__googletest_EXTERNAL_OBJECTS =
 
 test/test-tdd-googletest: test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o
+test/test-tdd-googletest: test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o
+test/test-tdd-googletest: test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o
 test/test-tdd-googletest: test/CMakeFiles/test-tdd-googletest.dir/build.make
 test/test-tdd-googletest: lib/libgtest_main.a
 test/test-tdd-googletest: lib/libgmock_main.a
 test/test-tdd-googletest: lib/libgmock.a
 test/test-tdd-googletest: lib/libgtest.a
 test/test-tdd-googletest: test/CMakeFiles/test-tdd-googletest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/do/Codes/Gits/TDD-GoogleTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test-tdd-googletest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/do/Codes/Gits/TDD-GoogleTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test-tdd-googletest"
 	cd /home/do/Codes/Gits/TDD-GoogleTest/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-tdd-googletest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -104,6 +156,8 @@ test/CMakeFiles/test-tdd-googletest.dir/build: test/test-tdd-googletest
 .PHONY : test/CMakeFiles/test-tdd-googletest.dir/build
 
 test/CMakeFiles/test-tdd-googletest.dir/requires: test/CMakeFiles/test-tdd-googletest.dir/src/test.cpp.o.requires
+test/CMakeFiles/test-tdd-googletest.dir/requires: test/CMakeFiles/test-tdd-googletest.dir/src/RetweetCollectionTest.cpp.o.requires
+test/CMakeFiles/test-tdd-googletest.dir/requires: test/CMakeFiles/test-tdd-googletest.dir/__/src/RetweetCollection.cpp.o.requires
 
 .PHONY : test/CMakeFiles/test-tdd-googletest.dir/requires
 

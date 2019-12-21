@@ -8,6 +8,8 @@ add_executable(
     ${TEST_SRC_DIR}/test.cpp
     # LIST OTHER CPP FILES HERE
     # ${PROJECT_SOURCE_DIR}/src/CAN_USE_FILES_OF_MAIN_SRC.cpp
+    ${TEST_SRC_DIR}/RetweetCollectionTest.cpp
+    ${PROJECT_SOURCE_DIR}/src/RetweetCollection.cpp
 )
 
 # EXECUTABLE FILE SHOULD BE COMPILED WITH HEARDER FILES IN /include
