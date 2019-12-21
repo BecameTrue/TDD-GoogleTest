@@ -165,12 +165,41 @@ Expected: is equal to 4.56
 Actual: 4.56 (of type double)
 ```
 
-#### Check for..
+...
 
-With a testing mentality, you seek to create tests that cover a breadth of concerns. You create tests for five types of cases: **zero, one, many, boundary, and exceptional cases.**
+#### Test-driving challenge
+
+When external dependency is needed, for instance invoking a REST service.
+
+- Making an actual HTTP call to invoke a REST service is very slow and will bog down your test run.
+- The service might not always be available.
+- You can’t guarantee what results the call will return.
+
+To avoid being blocked, here comes the **Test Double**.
+
+#### Test Double
+
+You can avoid being blocked, in any of these cases, by employing a test double. HTTP giving you trouble? Create a test double HTTP implementation! The job of the test double will be to support the needs of the test. When a client sends a GET request to the HTTP object, the test double can return a canned response.
+
+There are two ways to create a test double implementation.
+
+1. Make stub by your hand.
+2. Use **Google Mock**.
+
+**Google Mock** is to create a derived class that declares mock methods.
 
 ---
 
-5 챕터 부터 각 챕터 별 중요 이론 뽑아내기
+## Google Mock Docs
 
-부록의 Roman Numeral Converter 만들고 과정 기록하기
+1. [README](https://github.com/google/googletest/blob/master/googlemock/README.md)
+2. [CheatSheet](https://github.com/google/googletest/blob/master/googlemock/docs/cheat_sheet.md)
+3. [Cook Book](https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md)
+4. [For Dummies](https://github.com/google/googletest/blob/master/googlemock/docs/for_dummies.md)
+5. [GMock FAQ](https://github.com/google/googletest/blob/master/googlemock/docs/gmock_faq.md)
+6. [Pump Manual](https://github.com/google/googletest/blob/master/googlemock/docs/pump_manual.md)
+
+---
+
+## Practice
+
