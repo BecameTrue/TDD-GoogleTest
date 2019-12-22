@@ -248,7 +248,7 @@ Note that 40 is usually written XL ("10 less than 50") rather than XXXX, and 90 
 ### Things to test
 
 - [x] Can handle invalid input? (less than zero, zero, real number, alphabet, ...)
-- [ ] Can convert valid input?
+- [x] Can convert valid input?
 
 ### Testing History
 
@@ -294,3 +294,102 @@ Result:
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 ```
+
+#### Can convert valid input?
+
+Firstly I typed a failing test, which expects for "I" when "1" is given as an input.
+
+Code:
+
+```cpp
+TEST_F(RomanNumeralConverterFixture, CanConvertValidInput) {
+    ASSERT_EQ(converter.get(1), "I");
+}
+```
+
+Result:
+
+```bash
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from RomanNumeralConverterFixture
+[ RUN      ] RomanNumeralConverterFixture.CanHandleInvalidInput
+[       OK ] RomanNumeralConverterFixture.CanHandleInvalidInput (0 ms)
+[ RUN      ] RomanNumeralConverterFixture.CanConvertValidInput
+Segmentation fault
+```
+
+Seems like it passed the test, but there was an **Segmentation fault**.
+
+Of course, currently the `string RomanNumeralConverter::get(int input)` only returns something when input <= 0. So now, let's make this to pass the test.
+
+Code:
+
+```cpp
+string RomanNumeralConverter::get(int input) {
+    if(input <= 0) return "INVALID";
+
+    return "I";
+}
+```
+
+Result: 
+
+```bash
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from RomanNumeralConverterFixture
+[ RUN      ] RomanNumeralConverterFixture.CanHandleInvalidInput
+[       OK ] RomanNumeralConverterFixture.CanHandleInvalidInput (0 ms)
+[ RUN      ] RomanNumeralConverterFixture.CanConvertValidInput
+[       OK ] RomanNumeralConverterFixture.CanConvertValidInput (0 ms)
+[----------] 2 tests from RomanNumeralConverterFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+```
+
+Before to generate several more tests, these are the check-list of **_Can convert valid input?_**
+
+- [x] converts 1 to "I" 
+- [ ] converts 3 to "III"
+- [ ] converts 5 to "V"
+- [ ] converts 8 to "VIII"
+- [ ] converts 10 to "X"
+- [ ] converts 12 to "XII"
+- [ ] converts 15 to "XV"
+- [ ] converts 18 to "XVIII"
+- [ ] converts 20 to "XX"
+
+After passing all the tests,
+
+- [x] converts 1 to "I" 
+- [x] converts 3 to "III"
+- [x] converts 5 to "V"
+- [x] converts 8 to "VIII"
+- [x] converts 10 to "X"
+- [x] converts 12 to "XII"
+- [x] converts 15 to "XV"
+- [x] converts 18 to "XVIII"
+- [x] converts 20 to "XX"
+
+Main function & result : 
+
+```cpp
+int main(void) {
+    RomanNumeralConverter converter;
+
+    cout << "[YEAR] " << converter.get(2019) << endl;
+    cout << "[MONTH] " << converter.get(12) << endl;
+    cout << "[DAY] " << converter.get(22) << endl;
+}
+```
+
+```bash
+[YEAR] MMXVIIII
+[MONTH] XII
+[DAY] XXII
+```
+
+See rest of the code at [Github](https://github.com/BecameTrue/TDD-GoogleTest).
