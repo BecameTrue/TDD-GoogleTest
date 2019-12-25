@@ -319,7 +319,7 @@ Result:
 Segmentation fault
 ```
 
-Seems like it passed the test, but there was an **Segmentation fault**.
+There was an **Segmentation fault**.
 
 Of course, currently the `string RomanNumeralConverter::get(int input)` only returns something when input <= 0. So now, let's make this to pass the test.
 
@@ -361,6 +361,7 @@ Before to generate several more tests, these are the check-list of **_Can conver
 - [ ] converts 15 to "XV"
 - [ ] converts 18 to "XVIII"
 - [ ] converts 20 to "XX"
+- [ ] ...
 
 After passing all the tests,
 
@@ -373,6 +374,7 @@ After passing all the tests,
 - [x] converts 15 to "XV"
 - [x] converts 18 to "XVIII"
 - [x] converts 20 to "XX"
+- [ ] ...
 
 Main function & result : 
 

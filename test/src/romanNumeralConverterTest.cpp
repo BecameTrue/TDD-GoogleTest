@@ -19,4 +19,5 @@ TEST_F(RomanNumeralConverterFixture, CanConvertValidInput) {
     ASSERT_EQ(converter.get(18), "XVIII");
     ASSERT_EQ(converter.get(20), "XX");
     ASSERT_EQ(converter.get(2019), "MMXVIIII");
+    ASSERT_EQ(converter.get(12019), "MMMMMMMMMMMMXVIIII");
 }
